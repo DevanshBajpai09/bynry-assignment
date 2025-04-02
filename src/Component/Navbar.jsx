@@ -30,7 +30,7 @@ const Navbar = () => {
 
 
   
-      <Button type="submit" onClick={() => navigate('/component/loginForm')} className="bg-black text-white rounded-none px-4 py-2 ml-2">
+      <Button type="submit" onClick={() => navigate('/loginForm')} className="bg-black text-white rounded-none px-4 py-2 ml-2">
         Get Started <IoIosArrowForward />
       </Button>
  

@@ -23,7 +23,7 @@ const AdminRedirect = () => {
 
   if (loading) return <div><Loader/></div>;
 
-  return user?.email === "admin@admin.com" ? <Admin /> : <Navigate to="/component/admin" />;
+  return user?.email === "admin@admin.com" ? <Admin /> : <Navigate to="/admin" />;
 };
 
 

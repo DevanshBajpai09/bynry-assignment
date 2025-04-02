@@ -7,12 +7,12 @@ import './App.css'
 
 
 
-import LandingPage from "./component/LandingPage";
-import Navbar from "./component/Navbar";
+import LandingPage from "./Component/LandingPage";
+import Navbar from "./Component/Navbar";
 import SignupPage from "./Singup/Signup";
 import LoginPage from "./Login/login";
-import { AdminRedirect, DashboardRedirect } from "./component/Route";
-import ProtectRoute from "./component/ProtectRoute";
+import { AdminRedirect, DashboardRedirect } from "./Component/Route";
+import ProtectRoute from "./Component/ProtectRoute";
 
 
 
@@ -24,21 +24,17 @@ function App() {
     <>
      <Router>
       <Routes>
-        <Route path="/" element={<>
-          <Navbar />
-          <LandingPage />
-          
-        </> }/>
+        <Route path="/" element={<><Navbar /><LandingPage /></> }/>
       {/* Navigation Menu */}
         
-        <Route path="/component/signupForm" element={<SignupPage />} />
-        <Route path="/component/loginForm" element={<LoginPage />} />
+        <Route path="/signupForm" element={<SignupPage />} />
+        <Route path="/loginForm" element={<LoginPage />} />
 
         
 
         <Route element={<ProtectRoute />}>
-        <Route path="/component/admin" element={<AdminRedirect />} />
-        <Route path="/component/dashboard" element={<DashboardRedirect />} />
+        <Route path="/admin" element={<AdminRedirect />} />
+        <Route path="/dashboard" element={<DashboardRedirect />} />
         
         </Route>
         

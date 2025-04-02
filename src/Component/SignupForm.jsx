@@ -25,7 +25,7 @@ export function SignupForm() {
     try {
       await Signup(email, password,username);
       toast.success('Singup Successfull')
-      navigate("/component/loginForm");
+      navigate("/loginForm");
       
     } catch (error) {
       toast.error(error.message);
@@ -98,7 +98,7 @@ export function SignupForm() {
               </form>
               <div className="text-center text-sm">
                 Already have an account?{" "}
-                <a href="/component/loginForm" className="underline hover:text-blue-600 underline-offset-4">
+                <a href="/loginForm" className="underline hover:text-blue-600 underline-offset-4">
                   Login
                 </a>
               </div>

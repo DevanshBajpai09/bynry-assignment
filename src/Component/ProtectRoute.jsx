@@ -32,7 +32,7 @@ const ProtectRoute = () => {
   );
 
   if (!user) {
-    return <Navigate to="/component/loginForm" />;
+    return <Navigate to="/loginForm" />;
   }
 
   return <Outlet />; // Now, child routes will render correctly
