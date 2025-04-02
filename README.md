@@ -18,9 +18,9 @@ This is a web application built using **React** for the frontend, **Tailwind CSS
 ## Technologies Used:
 - **Frontend**: React, Tailwind CSS, Shadcn UI, Magic UI
 - **Backend**: Supabase (for Database, Authentication, and File Storage)
-- **Map Integration**: Google Maps or Mapbox API
+- **Map Integration**: React Leaflet
 - **Authentication**: Supabase Auth
-- **State Management**: React Context API (or Zustand)
+
 
 ---
 
