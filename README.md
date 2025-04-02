@@ -11,7 +11,7 @@ This is a web application built using **React** for the frontend, **Tailwind CSS
 - **Search and Filter**: The user section allows searching and filtering profiles by name, location, phone number, email, gender, and last signed-in.
 - **Responsive Design**: The application is mobile-friendly and works seamlessly on smartphones and tablets.
 - **Profile Details**: A separate view for each profile providing additional details like contact information, interests, etc.
-- **Login/Signup**: Users can register, log in, and admins have predefined credentials for easy access (`admin@admin.com`, `user@user.com`).
+- **Login/Signup**: Users can register, log in, and admins have predefined credentials for easy access (`admin@admin.com`, `user@user.com`) **Password**: (`123456789`).
 
 ---
 
@@ -28,5 +28,6 @@ This is a web application built using **React** for the frontend, **Tailwind CSS
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/profile-mapping-app.git
-cd profile-mapping-app
+git clone https://github.com/DevanshBajpai09/bynry-assignment.git
+npm install
+npm run dev
