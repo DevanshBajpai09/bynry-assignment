@@ -10,7 +10,7 @@ import {AuroraText} from  '../components/magicui/aurora-text'
 
 
 const LandingPage = () => {
-    // const [toogle, settoogle] = useState(false)
+    
 
   return (
     <>
