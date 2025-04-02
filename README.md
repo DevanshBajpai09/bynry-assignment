@@ -1,12 +1,32 @@
-# React + Vite
+# Profile Management and Location Mapping Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a web application built using **React** for the frontend, **Tailwind CSS**, **Shadcn UI**, **Magic UI** for design, and **Supabase** for the backend. The application allows users to view a collection of profiles, interactively explore the addresses of each profile on an integrated map (using Google Maps or Mapbox), and provides features such as profile creation, editing, and deletion. It also offers a search bar to filter profiles based on different criteria.
 
-Currently, two official plugins are available:
+### Key Features:
+- **Profile Display**: View a collection of profiles with essential information such as name, photograph, email, phone number, description, and gender.
+- **Interactive Mapping**: Visualize the geographic location of each profile on a map (Google Maps or Mapbox integration).
+- **Summary Integration**: Clicking the “Summary” button displays the map component with a marker indicating the precise address of the selected profile.
+- **Admin Panel**: Admin users can manage profiles, including adding, editing, and deleting profiles.
+- **Search and Filter**: The user section allows searching and filtering profiles by name, location, phone number, email, gender, and last signed-in.
+- **Responsive Design**: The application is mobile-friendly and works seamlessly on smartphones and tablets.
+- **Profile Details**: A separate view for each profile providing additional details like contact information, interests, etc.
+- **Login/Signup**: Users can register, log in, and admins have predefined credentials for easy access (`admin@admin.com`, `user@user.com`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Technologies Used:
+- **Frontend**: React, Tailwind CSS, Shadcn UI, Magic UI
+- **Backend**: Supabase (for Database, Authentication, and File Storage)
+- **Map Integration**: Google Maps or Mapbox API
+- **Authentication**: Supabase Auth
+- **State Management**: React Context API (or Zustand)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Installation Instructions
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/profile-mapping-app.git
+cd profile-mapping-app
