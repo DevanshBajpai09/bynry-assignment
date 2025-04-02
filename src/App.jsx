@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
-import LandingPage from './component/LandingPage'
+
 import Navbar from './component/Navbar'
 import LoginPage from "./Login/login";
 import SignupPage from "./Singup/Signup";
@@ -9,6 +9,7 @@ import SignupPage from "./Singup/Signup";
 import ProtectRoute from "./component/ProtectRoute";
 
 import { AdminRedirect, DashboardRedirect } from "./component/Route";
+import LandingPage from "./component/LandingPage";
 
 
 
