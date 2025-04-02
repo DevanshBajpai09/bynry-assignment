@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
-import LandingPage from './Component/LandingPage'
-import Navbar from './Component/Navbar'
+import LandingPage from './component/LandingPage'
+import Navbar from './component/Navbar'
 import LoginPage from "./Login/login";
 import SignupPage from "./Singup/Signup";
 
-import ProtectRoute from "./Component/ProtectRoute";
+import ProtectRoute from "./component/ProtectRoute";
 
-import { AdminRedirect, DashboardRedirect } from "./Component/Route";
+import { AdminRedirect, DashboardRedirect } from "./component/Route";
 
 
 
@@ -27,14 +27,14 @@ function App() {
         </> }/>
       {/* Navigation Menu */}
         
-        <Route path="/Component/SignupForm" element={<SignupPage />} />
-        <Route path="/Component/LoginForm" element={<LoginPage />} />
+        <Route path="/component/signupForm" element={<SignupPage />} />
+        <Route path="/component/loginForm" element={<LoginPage />} />
 
         
 
         <Route element={<ProtectRoute />}>
-        <Route path="/Component/Admin" element={<AdminRedirect />} />
-        <Route path="/Component/Dashboard" element={<DashboardRedirect />} />
+        <Route path="/component/admin" element={<AdminRedirect />} />
+        <Route path="/component/dashboard" element={<DashboardRedirect />} />
         
         </Route>
         

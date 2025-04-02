@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/utils/supabaseClient";
 import Dashboard from "./Dashboard";
 import Admin from "./Admin";
+import Loader from "./Loader";
 
 const AdminRedirect = () => {
   const [user, setUser] = useState(null);
@@ -20,9 +21,9 @@ const AdminRedirect = () => {
     checkUser();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div><Loader/></div>;
 
-  return user?.email === "admin@admin.com" ? <Admin /> : <Navigate to="/Component/Admin" />;
+  return user?.email === "admin@admin.com" ? <Admin /> : <Navigate to="/component/admin" />;
 };
 
 
@@ -39,7 +40,7 @@ const DashboardRedirect = () => {
     checkUser();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div><Loader/></div>;
 
   return <Dashboard />;
 };

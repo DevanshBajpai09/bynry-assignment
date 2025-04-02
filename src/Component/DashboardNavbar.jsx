@@ -27,7 +27,7 @@ const DashboardNavbar = ({ onSearch }) => {
         <Button onClick={() => navigate('/')} className="flex cursor-pointer items-center gap-2 bg-black text-white rounded-none px-5 py-2 transition-all">
           Logout <IoIosArrowForward />
         </Button>
-        <Button onClick={() => navigate('/Component/Admin')} className="flex cursor-pointer items-center gap-2 bg-black text-white rounded-none px-5 py-2 transition-all">
+        <Button onClick={() => navigate('/component/admin')} className="flex cursor-pointer items-center gap-2 bg-black text-white rounded-none px-5 py-2 transition-all">
           Admin <IoIosArrowForward />
         </Button>
       </div>

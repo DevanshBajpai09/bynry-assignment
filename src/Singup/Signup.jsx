@@ -1,7 +1,7 @@
 import { GalleryVerticalEnd, GalleryVerticalEndIcon } from "lucide-react"
 
 
-import { SignupForm } from "@/Component/SignupForm"
+import { SignupForm } from "@/component/SignupForm"
 import { BlurFade } from "@/components/magicui/blur-fade"
 
 export default function SignupPage() {

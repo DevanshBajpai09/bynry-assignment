@@ -1,4 +1,4 @@
-import { LoginForm } from "@/Component/LoginForm"
+import { LoginForm } from "@/component/LoginForm"
 import { BlurFade } from "@/components/magicui/blur-fade"
 import { GalleryVerticalEnd } from "lucide-react"
 

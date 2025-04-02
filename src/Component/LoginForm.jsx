@@ -25,7 +25,7 @@ export function LoginForm() {
         try {
           await Login(email, password);
           toast.success('Login Successfull')
-          navigate('/Component/Dashboard')
+          navigate('/component/dashboard')
         } catch (error) {
           toast.error(error.message);
         }
@@ -77,7 +77,7 @@ export function LoginForm() {
               </div>
               <div className="text-center text-sm">
                 Don&apos;t have an account?{" "}
-                <a href="/Component/SignupForm" className="underline underline-offset-4">
+                <a href="/component/signupForm" className="underline underline-offset-4">
                   Sign up
                 </a>
               </div>
